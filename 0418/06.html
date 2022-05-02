@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow속성</title>
+    <style>
+        p{
+            width: 15em;
+            height: 3em;
+            border: 1px solid pink;
+        }
+        #hidden{
+            overflow: hidden;
+        }
+        #scroll{
+            overflow: scroll;
+        }
+        #visible{
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>overflow 속성 visible(기본), hidden, scroll, auto</h3>
+    <hr>
+    <p id="hidden">overflow속성의 hidden값은 내용이 박스의 크기보다 많으면 내용이 감춰진다.</p>
+    <p id="scroll">overflow속성의 scroll값은 내용이 박스의 크기보다 많으면 내용이 스크롤바가 생긴다.</p>
+    <p id="visible">overflow속성의 visible값은 내용이 박스의 크기보다 많으면 내용이 박스에 넘쳐서 보인다.</p>
+</body>
+
+</html>

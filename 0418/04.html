@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index 속성, z축을 기준으로 겹쳐서 배치</title>
+    <style>
+        div {
+            position: absolute;
+        }
+
+        img {
+            position: absolute;
+            width: 100px;
+            height: 140px;
+        }
+
+        #spadeA {
+            z-index: 7;
+            left: 10px;
+            top: 20px;
+        }
+        #spade2 {
+            z-index: 5;
+            left: 40px;
+            top: 30px;
+        }
+        #spade3 {
+            z-index: 10;
+            left: 80px;
+            top: 40px;
+        }
+        #spade7 {
+            z-index: -3;
+            left: 120px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>z-index 속성은 position속성의 값이
+        relative, absolute, fixed인 경우만 사용 가능
+    </h3>
+    <hr>
+    <div>
+        <img id="spadeA" src="imgs/spade-A.png">
+        <img id="spade2" src="imgs/spade-2.png">
+        <img id="spade3" src="imgs/spade-3.png">
+        <img id="spade7" src="imgs/spade-7.png">
+    </div>
+</body>
+
+</html>

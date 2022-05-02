@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+div {
+    text-decoration: none;
+    font-family: 휴먼편지체, 굴림, serif;
+    font-size: 1em;
+    text-indent: 1em;
+}
+
+span {
+
+    text-decoration: none;
+    font-family: 휴먼편지체, 굴림, serif;
+    font-size: 1em;
+    text-indent: 1em;
+
+}
+
+form {
+    background-color: pink;
+}
+
+.bottom {
+    background-color: orange;
+    border-radius: 20px;
+}

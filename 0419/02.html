@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 꾸미기</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            text-align: left;
+            padding: 10px;
+            width: 100px;
+            height: 30px;
+        }
+        thead{
+            background-color: darkgray;
+            color: yellow;
+        }
+        td, tfoot th{
+            border-bottom: 1px solid gray;
+        }
+        tbody tr:nth-child(even){
+            background-color: aliceblue;
+        }
+        tbody tr:hover{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>HTML</th>
+                <th>CSS3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>황기태</td>
+                <td>95</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>박하나</td>
+                <td>85</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>유현주</td>
+                <td>77</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>유현주</td>
+                <td>77</td>
+                <td>89</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <th>257</th>
+                <th>273</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

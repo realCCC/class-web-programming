@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+}
+
+hr {
+    font-size: 1px solid;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+    text-shadow: 3px 3px 3px skyblue;
+}
+
+.목차 {
+    border: 1px dotted;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 휴먼편지체, 굴림, serif;
+    font-size: 1em;
+    text-indent: 1em;
+
+}
+
+.설문조사 {
+    display: block;
+    background-color: orange;
+    border-radius: 10px 10px 0px 0px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터(seletor) 연습</title>
+    <style type="text/css">
+        h3,
+        li {
+            color: brown;
+        }
+
+        .main {
+            background-color: aliceblue;
+        }
+
+        .warning {
+            color: red;
+        }
+
+        #list {
+            background-color: lavender;
+        }
+
+        div>strong {
+            color: dodgerblue;
+        }
+
+        ul strong {
+            color: purple;
+            background-color: yellow;
+        }
+        input[type=text]{
+            color: red;
+        }
+        h3::first-letter{
+            color: red;
+        }
+        li:hover{
+            background-color: yellowgreen;
+        }
+        a:link{
+            color: brown;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            background-color: plum;
+        }
+        a:active{
+            color: yellow;
+            background-color: navy;
+        }
+        a:visited{
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <h3>융합 UI 실습</h3>
+    <hr>
+    <div>
+        <div>1학기 <strong>학습 내용</strong></div>
+        <ul id="list">
+            <li>HTML5</li>
+            <li><strong>CSS3</strong></li>
+            <li>JavaScript</li>
+        </ul>
+        <div class="warning">60점 이하는 F!</div>
+        나의 결심<input type="text" name="d1" size="20">
+        <br>
+        <input type="button" name="btn1" value="완료">
+        <br>
+        <hr>
+        <a href="http://www.ssu.ac.kr">숭실대 홈페이지</a>
+    </div>
+</body>
+
+</html>
