@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬러 폼 요소</title>
+    <script type="text/javascript">
+        function changeTextColor(c) {
+            document.body.style.color = c.value;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>문서의 body 태그 부분의 글자 색 변경</h1>
+    <hr>
+    <form name="frm1" method="get" action="03.html">
+        *글자 색상 선택: <input type="color" name="textcolor" value="ff00ff" onchange="document.body.style.color=this.value">
+        <br><br>
+    </form>
+</body>
+
+</html>
