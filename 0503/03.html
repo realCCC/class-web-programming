@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항조건연산자</title>
+</head>
+
+<body>
+    <h3>삼항조건연산자</h3>
+    <hr>
+    <script>
+        let x = prompt("정수입력 첫번째:", 0);
+        let y = prompt("정수입력 두번째:", 0);
+
+        x = parseInt(x);
+        y = parseInt(y);
+        //let max = x > y ? x : y;
+        //삼항조건 연산자를 if~else문으로 수정하시오.
+        let max = 0;
+        if(x > y){
+            max = x;
+        }else{
+            max = y;
+        }
+
+        document.write(x + "," + y +"중에서 최대값은" + max + "입니다.")
+    </script>
+
+</body>
+
+</html>
