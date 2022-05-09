@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피 주문</title>
+</head>
+
+<body>
+    <h2>커피를 주문해 주세요~</h2>
+    <hr>
+    <script>
+        let coffee = prompt("커피종류 입력(아메리카노, 콜드브루, 카푸치노, 카페라떼)");
+        let price = 0;
+
+        switch (coffee) {
+            case "아메리카노":
+            case "Americano":
+                price = 4700;
+                break;
+            case "콜드브루":
+            case "ColdBrew":
+                price = 5000;
+                break;
+            case "카푸치노":
+            case "Capuccino":
+                price = 5000;
+                break;
+            case "카페라떼":
+            case "Cafelatte":
+                price = 5200;
+                break;
+            default:
+                document.write("<h3>판매하지 않는 커피입니다.</h3)")
+        }
+        if(price !=0){
+            document.write("<h3>"+ coffee +"는(은)"+ price +"원을 지불해 주세요.</h3)")
+        }
+    </script>
+</body>
+
+</html>
