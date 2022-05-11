@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 프로그램</title>
+</head>
+
+<body>
+    <h2>BMI 페이지를 작성하라.</h2>
+    <hr>
+    <script>
+        let weight = prompt("체중(kg)을 실수값으로입력:", 0)
+        weight = parseFloat(weight);
+
+        let height = prompt("키(cm)을 실수값으로입력:", 0)
+        height = parseFloat(height);
+
+        let bmi = weight / Math.pow(height / 100, 2);
+        let bmistr = bmi.toFixed(2);
+
+        document.write("<h3>고객님의 체중은" + weight + "kg, 키는" + height +
+            "cm이므로 bmi는" + bmistr + "kg/m입니다.</h3>");
+        let result = "";
+        let resulting = "";
+
+        if (bmi <= 18.5) {
+            result = "저";
+            resultImg = "low";
+        } else if (bmi <= 23) {
+            result = "정상";
+            resultImg = "normal";
+        } else if (bmi <= 25) {
+            result = "과";
+            resultImg = "over";
+        } else if (bmi <= 30) {
+            result = "비만";
+            resultImg = "obesity";
+        } else {
+            result = "고도비만";
+            resultImg = "super obesity";
+        }
+
+        document.write("<h3>따라서 고객님은" + result + "체중입니다.</h3>");
+        document.write("<img src='img/"+resultImg+".png'>")
+    </script>
+</body>
+
+</html>
