@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 60px;
+            pad: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>17개의 CSS2 색이름과 색</h3>
+    <hr>
+    <script>
+        let coloNames = ["maroon", "red", "orange", "yellow", "olive", "purple",
+            "fuchsia", "white", "lime", "green", "navy", "blue",
+            "aqua", "teal", "black", "silver", "gray"
+        ];
+        for (i = 0; i < coloNames.length; i++){
+            document.write("<div style='background-color:"+coloNames[i]+"'>");
+            document.write(coloNames[i]);
+            document.write("</div>");
+            if((i+1)%6 ==0)
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
