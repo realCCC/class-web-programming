@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this 사용 방법</title>
+    <script>
+        function changeSizeColor(obj, fontSize, color){
+            obj.style.fontSize =fontSize;
+            obj.style.color = color;
+        }
+    </script>
+</head>
+<body>
+    <h2>this 키워드 사용하기</h2>
+    <hr>
+    <button onclick="changeSizeColor(this, '30px', 'red')">버튼1</button>
+    <button onclick="changeSizeColor(this, '20px', 'blue')">버튼2</button>
+    <div onclick="changeSizeColor(this,'35px','orange')">여기를 클릭하면 문자열의 크기와 색상이 변경됩니다.</div>
+</body>
+</html>

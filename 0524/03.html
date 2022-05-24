@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>컬렉션으로 요소 객체를 반환 받아서 사용하는 방법</title>
+   <script>
+      function changeSpan() {
+         let spans = document.getElementsByTagName("span"); // 컬렉션(배열) 반환
+         let colors = ["red", "blue", "green", "yellow", "purple", "skyblue"]
+
+         for (let i = 0; i < spans.length; i++) {
+            spans[i].style.fontSize = (i + 1) * 10 + "px";
+            spans[i].style.color = colors[i];
+         }
+      }
+   </script>
+</head>
+
+<body>
+   <h3>딘딘은 딘딘</h3>
+   <h4>딘딘</h4>
+   <button onclick="changeSpan()">클릭해보세요.</button>
+   <hr>
+   <p>
+      지 디스를 곡으로 소화 한 놈
+      Yeah <span>딘딘</span>은 <span>딘딘</span>
+      그 조롱을 칭찬으로 바꾸는 놈
+      Yeah <span>딘딘</span>은 <span>딘딘</span>
+      트랙을 지 이름으로 만드는 놈
+      Yeah <span>딘딘</span>은 <span>딘딘</span>
+      한 해가 쏘아올린 공
+      그 공 잡고서
+      Shoot it and goal 역시
+   </p>
+
+</body>
+
+</html>

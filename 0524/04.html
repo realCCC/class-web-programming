@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName() 사용하는 방법</title>
+    <script>
+        function changeCountry() {
+            let country = document.getElementsByClassName("country");
+            let countrycolor = ["red", "blue", "purple"]
+
+            for (let i = 0; i < country.length; i++) {
+                country[i].style.fontSize = (i + 1) * 10 + "px";
+                country[i].style.color = countrycolor[i];
+                country[i].style.textDecoration = "underline";
+            }
+        }
+
+        function changeFood() {
+            let food = document.getElementsByClassName("food");
+
+            for (let i = 0; i < food.length; i++) {
+                food[i].style.fontSize = "35px";
+                food[i].style.color = "green";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>가고 싶은 곳과 먹고것싶은 것</h3>
+    <br>
+    <button onclick="changeCountry()">가고싶은 곳</button>
+    <button onclick="changeFood()">먹고싶은 것</button>
+    <hr>
+    <p>
+        <span class="country">이탈리아</span>에 가서 <span class="food">화덕피자</span>를 먹고
+        <span class="country">스위스</span>로 가서 <span class="food">치즈퐁듀</span>도 먹고 싶고
+        <span class="country">프랑스</span>에 가서 <span class="food">에스까르고</span>를 먹고 싶습니다.
+    </p>
+</body>
+
+</html>

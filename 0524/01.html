@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML 속성(Property)</title>
+    <script>
+        function changeImage(){
+            let p = document.getElementById("p1");
+            p.innerHTML = "우리의 <img src='imgs/kim.jpg'>선수"
+        }
+    </script>
+</head>
+<body>
+    <h2>innerHTML Property 연습: 아래 문장열을 클릭했을 때 이미지가 나타납니다.</h2>
+    <hr>
+    <p id="p1" style="color: blue;" onclick="changeImage()">여기에 <span style="color: red;">클릭하세요.</span></p>
+</body>
+</html>
