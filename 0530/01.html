@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새로운 DOM 객체 생성, 추가, 삭제</title>
+    <script>
+        function createDIV() {
+            let pObj = document.getElementById("parent");
+            let nDiv = document.createElement("div");
+            nDiv.innerHTML = "새로 생성된 div 요소입니다.";
+            nDiv.setAttribute("id", "mDiv");
+            nDiv.style.backgroundColor = "yellow";
+            nDiv.addEventListener("click", function () {
+                let p = this.parentElement;
+                p.removeChild(this);
+            });
+            pObj.appendChild(nDiv);
+        }
+    </script>
+</head>
+
+<body id="parent">
+    <h2>div 객체를 새로 생성하고 추가, 삭제하는 예제</h2>
+    <p>기존에 이미 생성된 DOM Tree에 새로운 DOM 객체를 추가 및 삭제를 할 수 있다.
+        DOM 객체의 생성은 createElement(), 추가는 appendChild(),
+        삭제는 removeChild()를 사용해서 할 수 있다.
+    </p>
+    <hr>
+    <a href="javascript:createDIV()">div 요소 생성</a>
+</body>
+
+</html>
