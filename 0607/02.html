@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단축메뉴 금지</title>
+    <script>
+        function HideMenu() {
+            alert("금지")
+            return false
+        }
+        document.oncontextmenu = HideMenu;
+
+        function notice() {
+            alert("본 페이지는 2022-07-01부터 http://www.poly.co.kr로 이전될 예정입니다")
+        }
+    </script>
+
+</head>
+
+<body onload="notice()">
+    <h2>oncontextmenu와 기본행동금지</h2>
+    <hr>
+    <h3>마우스 오른쪽 버튼을 클릭했을 때 나타나는 단축메뉴를 금지하려고 합니다.</h3>
+    <img src="imgs/beach.jpg" alt="">
+</body>
+
+</html>

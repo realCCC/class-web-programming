@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            border: 20px ridge wheat;
+        }
+    </style>
+    <script>
+        let files = ["imgs/img0.jpg", "imgs/img1.jpg", "imgs/img2.jpg", "imgs/img3.jpg", "imgs/img4.jpg",
+            "imgs/img5.jpg", "imgs/img6.jpg", "imgs/img7.jpg"]
+        let imgs = new Array();
+        for (let i = 0; i < files.length; i++) {
+            imgs[i] = new Image();
+            imgs[i].src = files[i];
+        }
+
+        let next = 1;
+
+        function change(img) {
+            img.src = imgs[next].src;
+            next++;
+            next %= imgs.length;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>이미지를 클릭하면 다음 이미지로 변경됩니다.</h2>
+    <hr>
+    <img src="imgs/img0.jpg" onclick="change(this)">
+</body>
+
+</html>
