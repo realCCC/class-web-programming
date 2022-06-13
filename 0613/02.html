@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콤보박스(select)와 onchange</title>
+    <script>
+        function changeImage(){
+            let sel = document.getElementById("sel");
+            let img = document.getElementById("img")
+            img.src = sel.options[sel.selectedIndex].value; //시험 빈칸 출제
+        }
+    </script>
+</head> 
+<body>
+    <h2>select의 Event Listener onchange</h2>
+    <hr>
+    <select name="" id="sel" onchange="changeImage()">
+        <option value="../0607/imgs/apple.jpg">사과</option>
+        <option value="../0607/imgs/banana.jpg" selected>바나나</option>
+        <option value="../0607/imgs/mango.jpg">망고</option>
+    </select>
+    <img id="img" src="../0607/imgs/banana.jpg" alt="">
+</body>
+</html>
